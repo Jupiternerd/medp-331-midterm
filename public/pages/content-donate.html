@@ -1,0 +1,56 @@
+<!-- Author: Wai Hlaing -->
+<!-- Midterm Project -->
+<div id="main-window" class="window">
+  <div class="title-bar">
+    <div class="title-bar-text">Give back to the Internet</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <section class="tabs" style="max-width:none; min-width: min-content; display: flex;
+    flex-direction: column;
+    width: 100%; height: 100%">
+      <menu role="tablist" aria-label="Sample Tabs">
+        <button role="tab" aria-selected="true" aria-controls="tab-A">Give Back</button>
+        <button role="tab" aria-controls="tab-B">The Internet Archive</button>
+        <button role="tab" aria-controls="tab-C">EFF (Electronic Frontier Foundation)</button>
+        <button role="tab" aria-controls="tab-D">More to be added (Soon!)</button>
+      </menu>
+      <!-- the tab content -->
+      <article role="tabpanel" id="tab-A">
+        <h3>Donate to these foundations and non-profits</h3>
+        <br>
+        <p>
+          The Internet is great, these organizations help keep it that way. Consider donating to them to help keep the Internet free and open.
+        </p>
+        <img src="/leak.gif"/>
+      </article>
+      <article role="tabpanel" hidden id="tab-B">
+        <h3>The Internet Archive</h3>
+        <br>
+        <p>This website extensively uses the Way Back Machine API to deliver old archived content. Consider donating to them!</p>
+        <br>
+        <a href="https://archive.org/donate/" target="_blank">Donate to the Internet Archive</a>
+        <br>
+        <br>
+        <img src="/miku.gif"/>
+      </article>
+      <article role="tabpanel" hidden id="tab-C">
+        <h3>EFF (Electronic Frontier Foundation)</h3>
+        <p>Defend Privacy and Free Speech, this non-profit help defend the free internet. Go donate: </p>
+        <a href="https://supporters.eff.org/donate/join-4--s">Donate to the EFF</a>
+        <br>
+        <br>
+        <img src="/Dancen.gif"/>
+      </article>
+      <article role="tabpanel" hidden id="tab-D">
+        <h3>Soon!</h3>
+        <p>More organizations will be added soon! </p>
+        <img src="/Dancen.gif"/>
+      </article>
+    </section>
+  </div>
+</div>
