@@ -135,13 +135,8 @@ body {
     z-index: 1000;
   }
 
-  /** At the bottom of the screen */
   #embed-container {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 100%;
-    transform: translateX(-50%);
+    display: none;
   }
 
   #main-window {
