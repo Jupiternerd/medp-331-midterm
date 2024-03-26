@@ -37,7 +37,24 @@ body {
   width: 20vw;
   overflow-y: auto;
   min-height: 40vh;
+  height: 2vh;
+}
+
+#donate-window {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  flex-shrink: 2;
+  margin-right: 42vw;
+  margin-top: 2vh;
+  min-width: 40vw;
+  max-height: fit-content;
+  min-height: fit-content;
+  width: 20vw;
+  overflow-y: auto;
+  min-height: 40vh;
   height: auto;
+
 }
 
 #browser-window {
@@ -62,7 +79,7 @@ body {
 }
 
 #website-input {
-  width: 60%; /* Adjust based on preference */
+  width: 60%;
   padding: 5px;
 }
 
@@ -72,7 +89,7 @@ body {
 }
 
 #results {
-  flex-grow: 1; /* Takes the remaining space */
+  flex-grow: 1;
   width: 100%;
 }
 
@@ -83,29 +100,12 @@ body {
 }
 
 
-#donate-window {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  flex-shrink: 2;
-  margin-right: 42vw;
-  margin-top: 2vh;
-  min-width: 40vw;
-  max-height: fit-content;
-  
-  min-height: fit-content;
-  width: 20vw;
-  overflow-y: auto;
-  min-height: 40vh;
-  height: auto;
-
-}
-
 .right-panel {
   margin-left: 20px;
   background: #fff;
   flex-grow: 1;
-  border: 1px solid #8da8ff
+  height: auto;
+  border: 1px solid #8da8ff;
 }
 
 .right-panel h3 {
@@ -125,21 +125,33 @@ body {
 
 @media screen and (max-width: 600px) {
   #header-window {
-    width: 100%; /* Make the header take the full width */
-    margin: 0; /* Remove margins to ensure it's fully at the top */
-    position: relative; /* Fix position to the top */
+    width: 100%;
+    margin: 0;
+    position: relative;
     top: 0;
     left: 0;
     
     max-width: 100vw;
-    z-index: 1000; /* Ensure it's above other content */
-    /* Any other styling you want to apply specifically for small screens */
+    z-index: 1000;
+  }
+
+  #embed-container {
+    display: none;
   }
 
   #main-window {
-    width: 100%; /* Make the main window take the full width */
-    margin-top: 10vh; /* Add margin to ensure it's below the header */
-    /* Any other styling you want to apply specifically for small screens */
+    width: 100%;
+    margin-top: 10vh;
+  }
+
+  #browser-window {
+    width: 100%;
+    margin-top: 10vh;
+  }
+
+  #donate-window {
+    width: 100%;
+    margin-top: 10vh;
   }
 }
 
@@ -175,8 +187,8 @@ body {
 
 .left-panel {
   background-color: #f0f0f0; /* Light gray background */
-  width: 200px; /* Adjust the width as needed */
-  overflow-y: auto; /* Allows scrolling if content is too long */
+  width: 200px;
+  overflow-y: auto;
 }
 
 .tree-view {
@@ -184,14 +196,5 @@ body {
 }
 
 [role="tabpanel"] {
-  flex-grow: 2; /* Expand to take available vertical space */
+  flex-grow: 2;
 }
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000000;
-  padding: 20px;
-}
-
