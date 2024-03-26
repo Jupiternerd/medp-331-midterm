@@ -14,6 +14,8 @@ function search() {
     $.getJSON(apiUrl, function(data) {
       if (data.archived_snapshots.closest && data.archived_snapshots.closest.available) {
         var resultUrl = data.archived_snapshots.closest.url;
+        // convert the url to https
+        resultUrl = resultUrl.replace('http://', 'https://');
         console.log(resultUrl);
         var iframe = $('<iframe>', {
             class: 'searchFrame',
