@@ -2,6 +2,7 @@
 
 import $ from "jquery";
 import generateHeader from "./components/header";
+import randSong from "./components/randomSong";
 function search() {
     var website = $('#website-input').val();
     if (!website) {
@@ -56,6 +57,7 @@ function initTabs() {
 
 function initPage() {
     $('#header').replaceWith(generateHeader());
+    $('#songFrame').replaceWith(randSong());
     $(document).on("click", "#home-butt", function() {
         $('#content').load("pages/content-main.html", initTabs); 
     });
